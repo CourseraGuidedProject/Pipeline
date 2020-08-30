@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+v = {editable = true,index = "https://pypi.org/simple",version = "*"}
+pytest = "*"
+pytest-cov = "*"
+
+[packages]
+distlib = {editable = true,path = "."}
+luigi = "*"
+dask = {extras = ["dataframe"],version = "*"}
+
+[requires]
+python_version = "3.7"
